@@ -1,0 +1,248 @@
+.courses-container {
+  background-color: #00053D;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.courses-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.courses-table {
+  width: 1000px;
+  border-collapse: collapse;
+  border-radius: 2px;
+  margin-left: 200px;
+}
+
+.courses-table th {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.courses-table td {
+  padding: 10px;
+  border-bottom: 1px solid #1159b8;
+  text-align: center;
+}
+
+.courses-table tr:nth-child(even) {
+  background-color: #00053D;
+}
+
+.courses-table tr:nth-child(odd) {
+  background-color: #394e69;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.action-btn.edit {
+  background-color: rgba(8, 8, 204, 0.676);
+  color: white;
+}
+.action-btn.view {
+  background-color: #158000;
+  color: white;
+}
+.action-btn.status {
+  background-color: yellow;
+  color: black;
+}
+
+.action-btn.delete {
+  background-color: #ff0000;
+  color: white;
+}
+.action-buttons{
+  display: flex;
+  flex-direction: row;
+}
+/*================= Add courses start =================*/
+/* Main Container */
+.add-course-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #00053D;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+/* Heading */
+.add-course-container h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Inputs, Textareas, Selects */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+/* Input Focus State */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+.profile-upload-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.upload-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2c4970;
+  border: 2px dashed #ffffff;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+  position: relative;
+}
+
+.upload-circle:hover {
+  border-color: #a0a0a0;
+}
+
+.upload-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plus-icon {
+  pointer-events: none;
+}
+
+
+/* Textarea */
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* File Input */
+.form-group input[type="file"] {
+  padding: 10px;
+  background-color: #2a4b75;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* File Input Button Styling */
+.form-group input[type="file"]::file-selector-button {
+  background-color: #426dad;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+/* File Preview Circle */
+.image-preview-circle {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.image-preview-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Disabled Fields */
+.form-group input:disabled,
+.form-group textarea:disabled {
+  background-color: #2c4970;
+  cursor: not-allowed;
+}
+
+/* Submit Button */
+.submit-btn {
+  align-self: flex-end;
+  background-color: #426dad;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #588ad1;
+}
+
+/* Responsive Fixes */
+@media (max-width: 600px) {
+  .add-course-container {
+    padding: 20px 10px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    align-self: center;
+  }
+}
