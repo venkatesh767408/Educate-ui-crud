@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "http://13.203.230.59:5050";
 
 const apiRequest = async ({ url, method, data }) => {
   const config = {
