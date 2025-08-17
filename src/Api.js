@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://13.203.230.59:5050";
+const API_URL = "http://35.154.61.85:5050";
 
 const apiRequest = async ({ url, method, data }) => {
   const config = {
