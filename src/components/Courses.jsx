@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "http://35.154.61.85:5050";
   useEffect(() => {
     axios
       .get(`${API_URL}/api/course/all`)
